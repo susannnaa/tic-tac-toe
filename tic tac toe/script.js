@@ -4,7 +4,7 @@ let board = [
     ["_", "_", "_"],
 ];
 let player = "x";
-let counter = 0;//sranov stugum em qani angam ashxatec loopy
+let counter = 0;//Counter helps to know how many times worked my loop
 while (true) {
     counter++;
     let boardStr = board[0].join("  ") + "\n" + board[1].join("  ") + "\n" + board[2].join("  ") + "\n";
@@ -20,7 +20,7 @@ while (true) {
         break;
     }
 
-    if (player === "x") {//poxum em xaxacoxin
+    if (player === "x") {//change the player
         player = "o";
 
     }
@@ -46,7 +46,7 @@ while (true) {
     }
 
     let result; 
-    if (counter > 4) {//tenum em erb arden 5 angam mta loop stugi
+    if (counter > 4) {//we are checking if the loop has worked 5 or more times and starting to check results
 
         let arr1 = [];
         let arr2 = [];
@@ -58,7 +58,7 @@ while (true) {
 
                 if (equal(board[d]) === true && board[d] !== ["_", "_", "_"]) {//check rows
                      alert("You win");
-                     result = 1; //break anelu hamar drsum
+                     result = 1; //to break in out
                      break;
                 }
 
