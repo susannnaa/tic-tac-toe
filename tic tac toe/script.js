@@ -46,7 +46,7 @@ while (true) {
     }
 
     let result; 
-    if (counter > 4) {//we are checking if the loop has worked 5 or more times and starting to check results
+    if (counter > 4) {//I am checking if the loop has worked 5 or more times and starting to check results
 
         let arr1 = [];
         let arr2 = [];
